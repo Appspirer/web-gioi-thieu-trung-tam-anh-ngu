@@ -1,0 +1,1050 @@
+@font-face {
+  font-family: "Metropolis Medium";
+  src: url("includes/font/Metropolis-Medium.otf");
+}
+
+@font-face {
+  font-family: "Metropolis Black";
+  src: url("includes/font/Metropolis-Black.otf");
+}
+
+@font-face {
+  font-family: "Metropolis Bold";
+  src: url("includes/font/Metropolis-Bold.otf");
+}
+
+@font-face {
+  font-family: "Metropolis SemiBold";
+  src: url("includes/font/Metropolis-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "Lucida Grande";
+  src: url("includes/font/LucidaGrande.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container__section {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+}
+
+.flex__center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/**header-start**/
+
+.header {
+  height: 93px;
+  background: #fff;
+}
+
+.navbar {
+  padding: 0px 108px 0px 148px !important;
+}
+
+.navbar button {
+  border: 2px solid #717cff;
+  border-radius: 11px;
+  width: 111px;
+  height: 42px;
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #505050;
+  background-color: #fff;
+  margin-left: 66px;
+}
+
+.navbar-nav {
+  gap: 65px;
+}
+
+.navbar-nav a {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #373737;
+  position: relative;
+}
+
+.navbar-nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 0px;
+  top: 42px;
+  width: 23px;
+  height: 3px;
+  background: #717cff;
+  opacity: 0.24;
+  border-radius: 2px;
+}
+
+.navbar-brand {
+  margin-top: 41px;
+}
+
+/**header-end**/
+
+/**banner-start**/
+
+.banner {
+  height: 681px;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+
+.banner__wrap {
+  padding: 0px 0px 0px 148px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.banner__text {
+  width: 632px;
+}
+
+.banner__text .title {
+  font-family: "Metropolis Black";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 56px;
+  color: #2f2f2f;
+  margin-top: 140px;
+  margin-bottom: 61px;
+}
+
+.banner__text .title span {
+  color: #717cff;
+}
+
+.banner__text .content {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 38px;
+  color: #7d7d7d;
+  margin-bottom: 45px;
+}
+
+.banner__text button {
+  background: #717cff;
+  border-radius: 11px;
+  width: 262px;
+  height: 64px;
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 40px;
+  /* identical to box height, or 182% */
+
+  color: #ffffff;
+  margin-bottom: 29px;
+  border: none;
+}
+
+.banner__text button span img {
+  margin-left: 29px;
+}
+
+.banner__text div img {
+  margin-right: 15px;
+}
+
+.banner__text .fb__padding {
+  margin-right: 23px;
+}
+
+.banner__image {
+  display: flex;
+  align-items: flex-end;
+}
+
+.banner__image img {
+  width: 470px;
+  height: 565px;
+  margin-left: 61px;
+  z-index: 2;
+}
+
+.oval__shape {
+  width: 1030px;
+  height: 581px;
+  border-radius: 50%;
+  background: linear-gradient(189.79deg, #8471ff 8.03%, #717cff 53.55%);
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  position: absolute;
+  bottom: -25%;
+  right: -11.1%;
+  z-index: 1;
+}
+
+/**banner-end**/
+
+/**infor__university-start**/
+
+.infor__university {
+  height: 423px;
+  background: #fafafa;
+}
+
+.infor__university__wrap p {
+  margin-top: 55px;
+  margin-bottom: 90px;
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+
+  color: #373737;
+
+  mix-blend-mode: normal;
+  opacity: 0.73;
+}
+
+.carousel-indicators {
+  bottom: -144px !important;
+}
+
+.carousel-indicators button {
+  background-color: #7c7c7c !important;
+}
+
+.carousel-indicators .active {
+  width: 14px !important;
+  height: 14px !important;
+  background-color: #717cff !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 17px !important;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+
+/**infor__university-end**/
+
+/**service-start**/
+
+.service {
+  height: 1269px;
+  background-color: #fff;
+}
+
+.service__text {
+  padding: 122px 245px 110px 246px;
+}
+
+.service__text .title {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 54px;
+  /* identical to box height, or 146% */
+
+  text-align: center;
+  letter-spacing: -0.4625px;
+
+  color: #373737;
+  margin-bottom: 25px;
+}
+
+.service__text .content {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 38px;
+  /* or 173% */
+
+  text-align: center;
+
+  color: #7d7d7d;
+}
+
+.service__box {
+  display: flex;
+  justify-content: center;
+  gap: 47px;
+  width: 100%;
+}
+
+.service__box .item {
+  width: 344px;
+  height: 351px;
+  background: #ffffff;
+  box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+  padding: 29px 17px 0px 31px;
+}
+
+.service__box .item img {
+  width: 76px;
+  height: 76px;
+  margin-bottom: 30px;
+}
+
+.service__box .item .title {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  /* identical to box height, or 154% */
+
+  color: #37474f;
+}
+
+.service__box .item .content {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  letter-spacing: 0.444444px;
+
+  color: rgba(55, 71, 79, 0.721569);
+  margin-bottom: 25px;
+}
+
+.service__box .item button {
+  background: transparent;
+  border: none;
+  display: flex;
+}
+
+.service__box .item button p {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  /* identical to box height */
+
+  letter-spacing: 0.439286px;
+
+  color: #717cff;
+}
+
+.service__box .item button img {
+  width: 24px;
+  height: 24px;
+  margin-left: 9px;
+}
+
+/**service-end**/
+
+/**news-start**/
+
+.news {
+  height: 1120px;
+  background: #fafafa;
+}
+
+.news__text {
+  padding: 102px 245px 66px 246px;
+}
+
+.news__text .title {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 54px;
+  /* identical to box height, or 146% */
+
+  text-align: center;
+  letter-spacing: -0.4625px;
+
+  color: #373737;
+  margin-top: 26px;
+  margin-bottom: 25px;
+}
+
+.news__text .content {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 38px;
+  /* or 173% */
+
+  text-align: center;
+
+  color: #7d7d7d;
+}
+
+.news__box {
+  display: flex;
+  justify-content: center;
+  gap: 46px;
+}
+
+.news__box .item {
+  width: 344px;
+  height: 406px;
+  background: #ffffff;
+  box-shadow: 0px 6px 42px rgba(0, 0, 0, 0.103884);
+  border-radius: 10px;
+}
+
+.news__box .item img {
+  width: 344px;
+  height: 224px;
+}
+
+.news__box .item .infor__news {
+  padding: 28px 27px 0px 26px;
+}
+
+.news__box .item .infor__news div img {
+  width: 21px;
+  height: 21px;
+  margin-bottom: 15px;
+}
+
+.news__box .item .infor__news div {
+  display: flex;
+  gap: 12px;
+}
+
+.news__box .item .infor__news div p {
+  font-family: "Metropolis SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #565656;
+}
+
+.news__box .item .infor__news p {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+
+  color: #252525;
+}
+
+.news .btn__join {
+  background: #717cff;
+  border-radius: 11px;
+  width: 226px;
+  height: 64px;
+  border: none;
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 40px;
+  /* identical to box height, or 182% */
+
+  color: #ffffff;
+  margin-top: 146px;
+}
+
+.news .btn__join span img {
+  margin-left: 34px;
+}
+
+/**news-end**/
+
+/**events-start**/
+
+.events {
+  height: 868px;
+  background: #fff;
+}
+
+.events__text {
+  padding: 98px 245px 0px 246px;
+}
+
+.events__text .title {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 54px;
+  /* identical to box height, or 146% */
+
+  text-align: center;
+  letter-spacing: -0.4625px;
+
+  color: #373737;
+  margin-top: 26px;
+  margin-bottom: 25px;
+}
+
+.events__text .content {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 38px;
+  /* or 173% */
+
+  text-align: center;
+
+  color: #7d7d7d;
+}
+
+.events__box {
+  height: 390px;
+}
+
+.events__box .item {
+  width: 540px;
+  height: 308px;
+  padding: 29px 27.7px 0px 31px;
+  background: #ffffff;
+  box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+  margin-right: 47px;
+  margin-top: 47px;
+  margin-bottom: 47px;
+}
+
+.events__box .item p {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  letter-spacing: 0.444444px;
+
+  color: rgba(55, 71, 79, 0.721569);
+}
+
+.events__box .item .title {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  /* or 154% */
+
+  color: #37474f;
+  width: 75%;
+}
+
+.events__box .item .top__box {
+  display: flex;
+  gap: 19px;
+}
+
+.events__box .item .top__box div {
+  width: 76px;
+  height: 76px;
+  background: #ebedff;
+  border-radius: 11px;
+  position: relative;
+}
+
+.events__box .item .top__box div span {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #717cff;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-top: 5px;
+}
+
+.events__box .item .top__box div p {
+  font-family: "Metropolis SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #717cff;
+}
+
+.bottom__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.events__box .item .bottom__box button {
+  border: none;
+  background: transparent;
+  display: flex;
+}
+
+.events__box .item .bottom__box button p {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  /* identical to box height */
+
+  letter-spacing: 0.439286px;
+
+  color: #717cff;
+}
+
+.events__box .item .bottom__box button img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.events__box .item .bottom__box div img {
+  width: 24px;
+  height: 24px;
+}
+
+.events__box .item .bottom__box div p {
+  font-family: "Metropolis SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  /* identical to box height, or 200% */
+
+  text-align: right;
+  letter-spacing: 0.444444px;
+
+  color: #373737;
+}
+
+.wrapper {
+  width: 1440px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.owl-carousel {
+  list-style: none;
+  padding: 0;
+}
+
+.owl-item:nth-child(2n) {
+  background: transparent;
+}
+
+.owl-item img {
+  opacity: 0.75;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-dots {
+  padding-bottom: 150px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(124, 124, 124, 0.318837) !important;
+  border-radius: 50%;
+  margin-left: 21px;
+}
+
+.owl-dot.active {
+  width: 14px;
+  height: 14px;
+  background: #717cff !important;
+}
+
+.owl-stage-outer {
+  margin-bottom: 40px;
+}
+
+/**events-end**/
+
+/**country__cover-start**/
+.country__cover {
+  height: 892px;
+  background: #fafafa;
+}
+
+.country__cover__text {
+  padding: 53px 245px 43px 246px;
+}
+
+.country__cover__text .title {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 54px;
+  /* identical to box height, or 146% */
+
+  text-align: center;
+  letter-spacing: -0.4625px;
+
+  color: #373737;
+  margin-top: 31px;
+  margin-bottom: 25px;
+}
+
+.country__cover__text .content {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 38px;
+  /* or 173% */
+
+  text-align: center;
+
+  color: #7d7d7d;
+}
+
+.country__cover__box {
+  width: 1440px;
+  padding: 0px 160px 0px 144px;
+}
+
+.country__cover__box .item {
+  width: 348px !important;
+}
+
+.country__cover__box .title {
+  font-family: "Metropolis SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #37474f;
+  margin-top: 27px;
+  margin-bottom: 15px;
+}
+
+.country__cover__box .content {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  /* or 169% */
+
+  color: rgba(55, 71, 79, 0.721569);
+}
+
+.owl-carousel2 .owl-stage {
+  display: flex;
+  justify-content: center;
+}
+
+.owl-carousel2 .owl-item {
+  margin-left: 4px;
+}
+
+/**country__cover-end**/
+
+/**testimonial-start**/
+
+.testimonial {
+  height: 944px;
+  background: #fff;
+}
+
+.testimonial__text {
+  padding: 115px 245px 0px 246px;
+}
+
+.testimonial__text .title {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 54px;
+  /* identical to box height, or 146% */
+
+  text-align: center;
+  letter-spacing: -0.4625px;
+
+  color: #373737;
+}
+
+.testimonial__text .content {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 38px;
+  /* or 173% */
+
+  text-align: center;
+
+  color: #7d7d7d;
+}
+
+.testimonial__box {
+  width: 1440px;
+  padding: 0px 0px 0px 148px;
+}
+
+.testimonial__box .item {
+  width: 503px;
+  height: 332px;
+  background: #fff;
+  box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+  border-radius: 29px;
+  padding: 39px 34px 0px 34px;
+  margin-top: 142px;
+}
+
+.info__testimonial {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.info__testimonial img {
+  width: 62px !important;
+  height: 62px;
+  margin-right: 28px;
+}
+
+.info__testimonial .name {
+  font-family: "Metropolis SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #37474f;
+}
+
+.info__testimonial .role {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #37474f;
+
+  mix-blend-mode: normal;
+  opacity: 0.65;
+}
+
+.testimonial__box .item .content {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+  /* or 172% */
+
+  color: rgba(55, 71, 79, 0.721569);
+}
+
+.owl-carousel3 .owl-item {
+  width: 570px !important;
+}
+
+.owl-carousel3 .owl-dots {
+  margin-top: 86px;
+  margin-right: 148px;
+}
+
+/**testimonial-end**/
+
+/**apply__online-start**/
+
+.apply__online {
+  height: 220px;
+  background: #fafafa;
+}
+
+.apply__online__wrap {
+  padding: 82px 150px 74px 147px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.apply__online__wrap p {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 37px;
+  /* identical to box height */
+
+  color: #252525;
+}
+
+.apply__online__wrap button {
+  width: 262px;
+  height: 64px;
+  gap: 29.3px;
+  background: #717cff;
+  border-radius: 11px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apply__online__wrap button p {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 40px;
+  /* identical to box height, or 182% */
+
+  color: #ffffff;
+  margin-top: 12px;
+}
+
+.apply__online__wrap button img {
+  width: 28px;
+  height: 26px;
+}
+
+/**apply__online-end**/
+
+/**footer-start**/
+
+.footer {
+  height: 346px;
+  background: #717cff;
+}
+
+.footer__wrap {
+  padding: 64px 149px 0px 144px;
+  display: flex;
+  width: 100%;
+}
+
+.footer__wrap .info {
+  width: 473px;
+  margin-right: 130px;
+}
+
+.footer__wrap .info img {
+  width: 160px;
+  height: 57px;
+  margin-bottom: 26px;
+}
+
+.footer__wrap .info .address {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  color: #eeeeee;
+  margin-bottom: 58px;
+}
+
+.footer__wrap .info p {
+  font-family: "Lucida Grande";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  color: #eeeeee;
+  width: 373px;
+}
+
+.footer__wrap div {
+  margin-right: 106px;
+}
+
+.footer__wrap div a {
+  width: 161px;
+  display: block;
+  text-decoration: none;
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 49px;
+  /* or 272% */
+
+  color: #eeeeee;
+}
+
+.footer__wrap .social {
+  display: flex;
+  align-items: end;
+  margin-bottom: 94px;
+  gap: 28px;
+}
+
+/**footer-end**/
